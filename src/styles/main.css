@@ -1,0 +1,437 @@
+body {
+  font-family: "Roboto Slab", serif;
+  color: white;
+}
+
+.container {
+  max-width: 1144px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.page-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(3, 68, 2, 0.7);
+}
+.page-header .header {
+  display: flex;
+  justify-content: space-between;
+}
+.page-header .header__buttons {
+  display: none;
+}
+.page-header .header__menu {
+  display: none;
+}
+.page-header .header__cart {
+  display: none;
+}
+@media (max-width: 900px) {
+  .page-header .header__navigation {
+    display: none;
+  }
+  .page-header .header__buttons {
+    display: flex;
+  }
+  .page-header .header__menu {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    background-color: inherit;
+    background-image: url(../images/header-menu.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 1px solid #27300f;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  .page-header .header__cart {
+    display: block;
+  }
+}
+.page-header .header__logo {
+  padding: 12px 0 6px;
+}
+.page-header .header__nav {
+  padding-left: 0;
+  margin-top: 32px;
+  list-style-type: none;
+  display: flex;
+  gap: 33px;
+}
+.page-header .header__link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+}
+.page-header .header__buttons {
+  display: flex;
+}
+
+.main {
+  position: relative;
+  background-image: url("../images/yarko-zelenii-fon-abstraktsiya.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0 202px;
+  margin-bottom: 100px;
+}
+.main .main-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  max-width: 299px;
+  margin-bottom: 0;
+}
+.main .main-title span {
+  color: #7BC30E;
+}
+.main .main-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 6px auto 0;
+}
+.main .main-text span {
+  font-weight: 700;
+}
+.main .main-wrapper {
+  display: flex;
+  justify-content: end;
+  margin-top: 42px;
+  margin-left: 220px;
+}
+.main .main-wrapper .box_left {
+  position: relative;
+  z-index: 1;
+  margin-right: 189px;
+}
+@media (max-width: 900px) {
+  .main .main-wrapper .box_left {
+    margin: 0;
+  }
+}
+.main .main-wrapper .box_left .main-title {
+  text-align: end;
+}
+.main .main-wrapper .box_left .main-title span {
+  padding-left: 47px;
+}
+@media (max-width: 900px) {
+  .main .main-wrapper .box_left .main-title span {
+    padding: 0;
+  }
+}
+.main .main-wrapper .box_left .main-title span span {
+  padding-left: 2px;
+}
+.main .main-wrapper .box_left .main-text {
+  width: 300px;
+  text-align: end;
+}
+@media (max-width: 900px) {
+  .main .main-wrapper .box_left .main-title {
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+  }
+  .main .main-wrapper .box_left .main-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+  }
+}
+.main .main-wrapper .glass-img {
+  position: absolute;
+  top: -7%;
+  left: 109%;
+  z-index: -1;
+}
+@media (max-width: 900px) {
+  .main .main-wrapper .glass-img {
+    display: none;
+  }
+}
+.main .main-wrapper .pack-img {
+  width: 285px;
+  height: 154px;
+  position: absolute;
+  top: 77%;
+  left: 84%;
+  z-index: -1;
+}
+@media (max-width: 1000px) {
+  .main .main-wrapper .pack-img {
+    top: 99%;
+  }
+}
+@media (max-width: 900px) {
+  .main .main-wrapper .pack-img {
+    left: 0%;
+    right: 0%;
+  }
+}
+@media (max-width: 900px) {
+  .main .main-wrapper {
+    flex-direction: column;
+    gap: 133px;
+    align-items: center;
+    margin: 0;
+  }
+  .main .main-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+  }
+  .main .main-title {
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+  }
+  .main .box_left {
+    margin: 0 auto;
+  }
+}
+.main .button {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #7BC30E;
+  padding: 8px 13px;
+  border-radius: 50px;
+}
+.main .box_right {
+  z-index: 1;
+}
+.main .box_right .main-title {
+  margin-top: 26px;
+}
+.main .box_right .main-text {
+  width: 341px;
+  margin: 8px 5px 26px 0;
+}
+@media (max-width: 900px) {
+  .main .main-title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .main .main-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .main .box_right {
+    text-align: center;
+  }
+}
+.main .main-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 33px 0 0 86px;
+}
+.main .main-aside__phone {
+  background-image: url("../images/phone.svg");
+  background-size: 22px 25px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #7BC30E;
+  border-radius: 50%;
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+.main .main-aside__card {
+  background-image: url("../images/shopping-cart.svg");
+  background-size: 22px 25px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #7BC30E;
+  border-radius: 50%;
+  display: block;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+@media (max-width: 1000px) {
+  .main .main-aside {
+    display: none;
+  }
+}
+.main .social {
+  background-color: #7BC30E;
+  list-style-type: none;
+  padding-left: 0;
+  border-radius: 29px;
+  margin: 0;
+}
+.main .social-item {
+  padding: 5px;
+}
+.main .social-link {
+  margin: 0;
+}
+.main .social-telegram {
+  background-image: url(../images/telegram.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  width: 38px;
+  height: 38px;
+}
+.main .social-vk {
+  background-image: url(../images/vk.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  width: 38px;
+  height: 38px;
+}
+.main .social-youtube {
+  background-image: url(../images/youtube.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  width: 38px;
+  height: 38px;
+}
+.main .social-instagram {
+  background-image: url(../images/instagram.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  width: 38px;
+  height: 38px;
+}
+
+.about {
+  margin-bottom: 100px;
+}
+.about .about-wrapper {
+  display: flex;
+  gap: 77px;
+  position: relative;
+}
+.about .about-box {
+  order: 2;
+  max-width: 511px;
+  color: #333333;
+}
+.about .about-box-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  max-width: 380px;
+}
+.about .about-box-span {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 63px;
+  color: #7BC30E;
+}
+.about .about-box-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #8E8E8E;
+  margin-bottom: 30px;
+}
+.about .about-list_item {
+  list-style-type: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  position: relative;
+}
+.about .about-list_item:before {
+  content: " ";
+  width: 53px;
+  height: 53px;
+  position: absolute;
+  top: -11px;
+  left: -68px;
+  border: 4px solid #7BC30E;
+  border-radius: 100%;
+}
+.about .about-list_item-1:after {
+  content: "1";
+  position: absolute;
+  top: -1px;
+  left: -45px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+  color: #7BC30E;
+}
+.about .about-list_item-2:after {
+  content: "2";
+  position: absolute;
+  top: -1px;
+  left: -45px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+  color: #7BC30E;
+}
+.about .about-list_item-3:after {
+  content: "3";
+  position: absolute;
+  top: -1px;
+  left: -45px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+  color: #7BC30E;
+}
+.about .about-aside {
+  order: 1;
+  max-width: 290px;
+}
+.about .about-aside-text {
+  font-family: "Caveat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 24px;
+  color: #034402;
+}
+.about .green {
+  position: absolute;
+  height: 285px;
+  left: -1300px;
+  top: 0;
+  z-index: -1;
+}
+.about .glass-sprouts {
+  position: absolute;
+  right: -1000px;
+  top: 0;
+  z-index: -1;
+  width: 517px;
+  height: 361px;
+}
+
+/*# sourceMappingURL=main.css.map */
