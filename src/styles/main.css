@@ -78,6 +78,10 @@ body {
   display: flex;
 }
 
+.title-span {
+  color: #7BC30E;
+}
+
 .main {
   position: relative;
   background-image: url("../images/yarko-zelenii-fon-abstraktsiya.png");
@@ -94,9 +98,6 @@ body {
   line-height: 48px;
   max-width: 299px;
   margin-bottom: 0;
-}
-.main .main-title span {
-  color: #7BC30E;
 }
 .main .main-text {
   font-style: normal;
@@ -442,19 +443,40 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 150px 0 202px;
+  padding: 67px 0 172px;
   margin-bottom: 100px;
   position: relative;
+}
+.compound .compound-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.compound .compound-title .title-span {
+  font-size: 48px;
 }
 .compound .compound-container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 .compound .compound-container-left {
   max-width: 460px;
 }
 .compound .compound-container-right {
   max-width: 460px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.compound .compound-container-right .curly-arrow {
+  position: absolute;
+  top: -66px;
+  left: 39px;
+}
+.compound .compound-container-right .seed {
+  width: 84px;
+  height: 84px;
 }
 .compound .compound-glass-img {
   position: absolute;
