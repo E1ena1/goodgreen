@@ -24,6 +24,8 @@ body {
   //font-family: 'Caveat', cursive;
   font-family: 'Roboto Slab', serif;
   color: white;
+  position: relative;
+  height: 100%;
 }
 
 .container {
@@ -178,6 +180,7 @@ body {
       top: -7%;
       left: 109%;
       z-index: -1;
+
       @media (max-width: $r_tab_900) {
         display: none;
       }
@@ -231,6 +234,7 @@ body {
     background-color: $green_green;
     padding: 8px 13px;
     border-radius: 50px;
+    animation: shadow 15s infinite;
   }
   .box_right {
     z-index: 1;
@@ -454,3 +458,100 @@ body {
   }
 }
 
+.compound {
+  background-image: url("../images/compound-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0 202px;
+  margin-bottom: 100px;
+  position: relative;
+  .compound-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .compound-container-left {
+    max-width: 460px;
+  }
+  .compound-container-right {
+    max-width: 460px;
+  }
+  .compound-glass-img {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+
+  }
+}
+.swiper {
+  width: 100%;
+}
+.swiper-wrapper {
+  gap: 21px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 212px;
+  background: linear-gradient(180deg, rgba(0, 192, 31, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+  border-radius: 31px;
+  padding: 25px;
+}
+
+.swiper-slide__number {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 53px;
+}
+
+.swiper-slide__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.swiper-slide__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+}
+
+.swiper-pagination {
+  display: none;
+  @media (max-width: $r_tab)  {
+    display: block;
+  }
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow: 0 0 0 0;
+    transform: scale(0.99)
+  }
+
+  25% {
+    box-shadow: 3px 3px 15px 15px rgba($green_green, 0.25);
+    transform: scale(1)
+  }
+  50% {
+    box-shadow: 3px 3px 15px 15px rgba($main, 0.25);
+    transform: scale(1)
+  }
+  50% {
+    box-shadow: 3px 3px 15px 15px rgba(0, 0, 0, 0.25);
+    transform: scale(1)
+  }
+
+  100% {
+    box-shadow: 0 0 0 0;
+    transform: scale(0.99)
+  }
+}

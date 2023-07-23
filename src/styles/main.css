@@ -1,6 +1,8 @@
 body {
   font-family: "Roboto Slab", serif;
   color: white;
+  position: relative;
+  height: 100%;
 }
 
 .container {
@@ -216,6 +218,7 @@ body {
   background-color: #7BC30E;
   padding: 8px 13px;
   border-radius: 50px;
+  animation: shadow 15s infinite;
 }
 .main .box_right {
   z-index: 1;
@@ -432,6 +435,105 @@ body {
   z-index: -1;
   width: 517px;
   height: 361px;
+}
+
+.compound {
+  background-image: url("../images/compound-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0 202px;
+  margin-bottom: 100px;
+  position: relative;
+}
+.compound .compound-container {
+  display: flex;
+  justify-content: space-between;
+}
+.compound .compound-container-left {
+  max-width: 460px;
+}
+.compound .compound-container-right {
+  max-width: 460px;
+}
+.compound .compound-glass-img {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-wrapper {
+  gap: 21px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 212px;
+  background: linear-gradient(180deg, rgba(0, 192, 31, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+  border-radius: 31px;
+  padding: 25px;
+}
+
+.swiper-slide__number {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 53px;
+}
+
+.swiper-slide__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.swiper-slide__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+}
+
+.swiper-pagination {
+  display: none;
+}
+@media (max-width: 768px) {
+  .swiper-pagination {
+    display: block;
+  }
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow: 0 0 0 0;
+    transform: scale(0.99);
+  }
+  25% {
+    box-shadow: 3px 3px 15px 15px rgba(123, 195, 14, 0.25);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 3px 3px 15px 15px rgba(3, 68, 2, 0.25);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 3px 3px 15px 15px rgba(0, 0, 0, 0.25);
+    transform: scale(1);
+  }
+  100% {
+    box-shadow: 0 0 0 0;
+    transform: scale(0.99);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
