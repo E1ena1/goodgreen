@@ -7,11 +7,28 @@ import 'swiper/css/pagination';
 
 import './styles/main.scss';
 
-const swiper = new Swiper('.swiper', {
+var swiper = new Swiper('.swiper', {
+    slidesPerView: 4,
+    slidesPerGroup: 4,
     // configure Swiper to use modules
     modules: [Navigation, Pagination],
-        direction: 'horizontal',
-    loop: true,
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            slidesPerGroup: 1
+        },
+        768: {
+            slidesPerView: 2,
+            slidesPerGroup: 2
+        },
+        1000: {
+            slidesPerView: 3,
+            slidesPerGroup: 3
+        }
+    },
+    direction: 'horizontal',
+    loop: false,
+    loopFillGroupWithBlank: false,
 
     // If we need pagination
     pagination: {
